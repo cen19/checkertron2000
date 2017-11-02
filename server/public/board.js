@@ -21,12 +21,8 @@ const startBoard = [
 const currentBoard = [];
 
 const displayBoard = function(board) {
-  console.log('working on some stufF!!!');
+  // console.log('working on some stufF!!!');
 
-  var blackPiece = document.createElement('div');
-  blackPiece.className = 'black-piece';
-
-  var nl = document.createElement('br');
   
   
   var pageBoard = document.getElementById('checkerboard');
@@ -35,27 +31,23 @@ const displayBoard = function(board) {
 
   // construct new board
   for (var i = 0; i < board.length; i++) {
-    console.log('rows, ', i);
+    var nl = document.createElement('br');
     var row = board[i];
-    console.log('row data, ', row);
     for (var j = 0; j < row.length; j++) {
       var spot = board[i][j];
       if (spot === 0) {
         var lightSquare = document.createElement('div');
         lightSquare.className = 'light-square';
-        console.log('appending light square!');
         pageBoard.appendChild(lightSquare);
       } else if (spot === 1) {
         var darkSquare = document.createElement('div');
         darkSquare.className = 'dark-square';
-        console.log('appending dark square!');
         pageBoard.appendChild(darkSquare);
       } else if (spot === 2) {
         var darkSquare = document.createElement('div');
         darkSquare.className = 'dark-square';
         var redPiece = document.createElement('div');
         redPiece.className = 'red-piece';
-        console.log('appending dark square w/ red!');
         darkSquare.appendChild(redPiece);
         pageBoard.appendChild(darkSquare);
       } else if (spot === 3) {
@@ -63,7 +55,6 @@ const displayBoard = function(board) {
         darkSquare.className = 'dark-square';
         var blackPiece = document.createElement('div');
         blackPiece.className = 'black-piece';
-        console.log('appending dark square w/ black!');
         darkSquare.appendChild(blackPiece);
         pageBoard.appendChild(darkSquare);
       }
