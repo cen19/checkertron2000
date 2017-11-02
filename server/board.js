@@ -1,16 +1,16 @@
 // legend
   // 0 light square
-  // 1 light square with piece on it
-  // 2 dark square
-  // 3 dark square with piece on it
+  // 1 dark square
+  // 2 dark square with red piece on it
+  // 3 dark square with black piece on it
 
 
 const startBoard = [
-    [0, 3, 0, 3, 0, 3, 0, 3],
-    [3, 0, 3, 0, 3, 0, 3, 0],
-    [0, 3, 0, 3, 0, 3, 0, 3],
-    [3, 0, 3, 0, 3, 0, 3, 0],
-    [0, 3, 0, 3, 0, 3, 0, 3],
+    [0, 2, 0, 2, 0, 2, 0, 2],
+    [2, 0, 2, 0, 2, 0, 2, 0],
+    [0, 2, 0, 2, 0, 2, 0, 2],
+    [1, 0, 1, 0, 1, 0, 1, 0],
+    [0, 1, 0, 1, 0, 1, 0, 1],
     [3, 0, 3, 0, 3, 0, 3, 0],
     [0, 3, 0, 3, 0, 3, 0, 3],
     [3, 0, 3, 0, 3, 0, 3, 0],
