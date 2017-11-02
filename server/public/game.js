@@ -2,6 +2,7 @@ let testInit = {
   method: 'GET'
 };
 
+
 let fetchTest = function() {
   fetch('http://localhost:3000/test', testInit)
     .then((res) => res.json())
