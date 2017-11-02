@@ -21,10 +21,6 @@ const startBoard = [
 const currentBoard = [];
 
 const displayBoard = function(board) {
-  // console.log('working on some stufF!!!');
-
-  
-  
   var pageBoard = document.getElementById('checkerboard');
   // clear old board
   pageBoard.innerHTML = '';
@@ -61,4 +57,10 @@ const displayBoard = function(board) {
     }
     pageBoard.appendChild(nl);
   }
+
+  document.addEventListener('click', function(e) {
+    if (e.target && e.target.className === 'dark-square') {
+      console.log('clicking on, ', e.target);
+    }
+  });
 };

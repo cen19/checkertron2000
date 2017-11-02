@@ -3,15 +3,16 @@
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Checkertron-2000</title>
-  </head>
-  <body>
     <script src="game.js"></script>
     <script src="board.js"></script>
+  </head>
+  <body onload=displayBoard(startBoard)>
+
     <p id='basic-message'>
       Hello World! This is the landing page
     </p>
     <input type="button" value="test" onclick=fetchTest()>
-    <div id="checkerboard" onclick=displayBoard(startBoard)>
+    <div id="checkerboard">
 
     </div>
 
