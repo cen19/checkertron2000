@@ -3,13 +3,13 @@
 -- Basic Setup
 -- Serving Static HTML
 - Body Parser Docs
-
+- require is not defined?
 # Client
 - Built in fetch in ES6
 - 
 ## HTML
--  Clickable field for the board
+- create HTML stuff with JavaScript loop
 
 ## CSS
-- Basic CSS to jog memory
+- Basic CSS syntax to jog memory
 -- https://www.w3schools.com/css/css_syntax.asp
