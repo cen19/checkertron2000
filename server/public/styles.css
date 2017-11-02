@@ -1,4 +1,27 @@
 #basic-message {
-  color: red;
+  color: green;
 }
 
+#checkerboard {
+  width: 496px;
+  height: 496px;
+  border: 2px black;
+  border-style: solid;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  border: 1px black;
+  border-style: solid;
+  float: left;
+}
+
+.dark-square {
+  background-color: lightslategray;
+  width: 60px;
+  height: 60px;
+  border: 1px black;
+  border-style: solid;
+  float: left;  
+}

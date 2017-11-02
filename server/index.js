@@ -13,7 +13,9 @@ app.get('/', function(req, res) {
   res.send('index.html');
 });
 
-
+app.get('/test', function(req, res) {
+  res.send('working!');
+});
 
 app.listen(3000, () => {
   console.log('Checkertron ready to engage!');
