@@ -9,7 +9,7 @@
   border-style: solid;
 }
 
-.square {
+.light-square {
   width: 60px;
   height: 60px;
   border: 1px black;
@@ -26,10 +26,14 @@
   float: left;  
 }
 
-.dark-square-red-piece {
-
+.red-piece:before {
+  content: ' \25CF';
+  font-size: 30px;
+  color: red;
 }
 
-.dark-square-black-piece {
-  
+.black-piece:before {
+  content: ' \25CF';
+  font-size: 30px;
+  color: black;
 }

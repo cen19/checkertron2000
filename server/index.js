@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const board = require('../server/board');
+
 
 var app = express();
 
@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 
 app.get('/test', function(req, res) {
   console.log('got request');
-  res.send(board);
+  res.send('success!');
 });
 
 app.listen(3000, () => {
